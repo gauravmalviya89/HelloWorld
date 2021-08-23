@@ -16,10 +16,7 @@ jobs:
         uses: actions/setup-node@v1
         with:
           node-version: 12.x  
-      - run: npm ci
-      - run: npm run build
-      - run: npm run format-check
-      - run: npm test
+         
              
       - uses: akhileshns/heroku-deploy@v3.12.12
         with:
